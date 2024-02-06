@@ -1,0 +1,40 @@
+# Ignore node_modules
+node_modules
+
+# Ignore compiled JavaScript files
+dist
+
+# Ignore environment files
+.env
+
+# Ignore any build output, logs, and temporary files
+/build/
+/logs/
+/temp/
+/*.log
+npm-debug.log*
+
+# Ignore TypeScript cache
+*.tsbuildinfo
+
+# Ignore Visual Studio Code folder
+.vscode
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Jest coverage output
+coverage/
+
+# Ignore debugging files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore package-lock files
+package-lock.json
+
+# ignore uploads directory
+/public/uploads/profile-pictures/*.*

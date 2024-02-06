@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Authentication Template</title>
+  </head>
+  <body>
+    <h1>Authentication Boilerplate</h1>
+    <p>This app is a demo app for authentication boilerplate</p>
+    {{#if user}}
+      <p>Hello {{user.fullName}}</p>
+      <img src="{{user.imageUrl}}" width="100px">
+      <p>Click here to <a href="{{authUrl.logout}}">logout</a></p>
+    {{else}}
+      <p>No user in the session, please login</p>
+      <ul>
+        <li><a href="{{authUrl.google}}">Google</a></li>
+        <li><a href="{{authUrl.facebook}}">Facebook</a></li>
+        <li><a href="{{authUrl.twitter}}">Twitter</a></li>
+        <li><a href="{{authUrl.linkedIn}}">Linked In</a></li>
+      </ul>
+    {{/if}}
+  </body>
+</html>
